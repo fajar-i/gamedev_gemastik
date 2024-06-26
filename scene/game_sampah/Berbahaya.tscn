@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd0evhdfsgi35"]
+
+[ext_resource type="Script" path="res://scene/game_sampah/object.gd" id="1_ychlq"]
+[ext_resource type="Texture2D" uid="uid://ca1phrnhdwa0m" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/barRed_horizontalRight.png" id="2_1wib4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kcqv2"]
+size = Vector2(33.5536, 38.3214)
+
+[node name="Berbahaya" type="Node2D"]
+script = ExtResource("1_ychlq")
+
+[node name="Berbahaya" type="Sprite2D" parent="."]
+scale = Vector2(0.884, 1)
+texture = ExtResource("2_1wib4")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+scale = Vector2(0.7, 0.7)
+shape = SubResource("RectangleShape2D_kcqv2")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

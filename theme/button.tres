@@ -1,0 +1,20 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://c12v04fx7jsf5"]
+
+[ext_resource type="Texture2D" uid="uid://5s6lx8yyh184" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonLong_blue_pressed.png" id="1_jhuw3"]
+[ext_resource type="Texture2D" uid="uid://dqm5ks3fbc7bt" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonLong_blue.png" id="1_s1jyb"]
+[ext_resource type="FontFile" uid="uid://dlqfvpk8hfxdv" path="res://asset/alagard.ttf" id="1_yg64u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_56uq3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h77ai"]
+texture = ExtResource("1_jhuw3")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d1if6"]
+texture = ExtResource("1_s1jyb")
+
+[resource]
+Button/fonts/font = ExtResource("1_yg64u")
+Button/styles/focus = SubResource("StyleBoxEmpty_56uq3")
+Button/styles/hover = SubResource("StyleBoxTexture_h77ai")
+Button/styles/normal = SubResource("StyleBoxTexture_d1if6")
+Button/styles/pressed = SubResource("StyleBoxTexture_h77ai")
