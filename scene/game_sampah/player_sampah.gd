@@ -6,9 +6,9 @@ extends Node2D
 @onready var endScr = $"../endScreen"
 @onready var map = $"../TileMap"
 
-@export var speed = 150
-@export var health = 100
 @export var banyak_sampah = 10
+@export var health = 100
+@export var speed = 150
 
 func _enter_tree():
 	request_ready()

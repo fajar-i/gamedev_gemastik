@@ -61,4 +61,5 @@ offset_right = 323.0
 offset_bottom = 166.0
 theme = SubResource("Theme_jw4wp")
 
+[connection signal="pressed" from="pemburu_utara" to="." method="_on_pemburu_utara_pressed"]
 [connection signal="pressed" from="sampah_balaikota" to="." method="_on_sampah_balaikota_pressed"]

@@ -1,6 +1,7 @@
 extends Control
 
 var result
+var restartScene
 
 func start():
 	if result == 1:
@@ -16,4 +17,4 @@ func _on_button_pressed():
 		get_tree().change_scene_to_file("res://scene/map.tscn")
 	
 	elif result == 0:
-		get_tree().change_scene_to_file("res://scene/game_sampah/main_sampah.tscn")
+		get_tree().change_scene_to_file(restartScene)

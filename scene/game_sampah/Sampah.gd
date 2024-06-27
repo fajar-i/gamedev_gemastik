@@ -14,15 +14,15 @@ var packed_scene = [
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _ready():
 	endScr.result = -1
-	
+
 	$"../TongSampah/Organik".modulate = Color.GREEN
 	$"../TongSampah/Nonorganik".modulate = Color.YELLOW
 	$"../TongSampah/Berbahaya".modulate = Color.RED
-	
+
 	for i in range(10):
 		var x = randi() % packed_scene.size()
-		location.x = randf_range(1, window_size.x)
-		location.y = randf_range(1, window_size.y)
+		location.x = randf_range(10, 1000)
+		location.y = randf_range(10, 500)
 		var scene = packed_scene[x].instantiate()
 		scene.position = location
 		scene.jenis_sampah = scene.name
@@ -51,6 +51,7 @@ func cek_menang(tong_sampah, jenis_sampah):
 		$"../TileMap".set_layer_z_index(1, -1)
 		$"../TileMap".set_layer_z_index(0, -2)
 		
+		endScr.restartScene = "res://scene/game_sampah/main_sampah.tscn"
 		endScr.position = $"../player".position
 		endScr.position.y -= 320
 		endScr.start()
