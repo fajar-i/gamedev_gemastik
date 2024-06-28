@@ -8,12 +8,23 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "",
+"default_portrait": "Kanan",
 "description": "",
 "display_name": "Mella",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(-70, -17),
-"portraits": {},
+"portraits": {
+"Kanan": {
+"export_overrides": {
+"image": "\"res://assets/chat_isthisreal/dialog mella.png\""
+},
+"ignore_char_scale": true,
+"mirror": true,
+"offset": Vector2(20, -5),
+"scale": 0.2,
+"scene": ""
+}
+},
 "scale": 0.2
 }

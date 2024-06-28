@@ -15,6 +15,16 @@
 "nicknames": [""],
 "offset": Vector2(-75, -17),
 "portraits": {
+"Kanan": {
+"export_overrides": {
+"image": "\"res://assets/chat_isthisreal/Pemburu dialog.png\""
+},
+"ignore_char_scale": true,
+"mirror": true,
+"offset": Vector2(25, -5),
+"scale": 0.2,
+"scene": ""
+},
 "Neutral": {
 "export_overrides": {
 "image": "\"res://assets/chat_isthisreal/Pemburu dialog.png\""

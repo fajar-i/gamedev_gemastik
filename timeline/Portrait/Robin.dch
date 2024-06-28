@@ -30,7 +30,7 @@
 "image": "\"res://assets/chat_isthisreal/mc dialog.png\""
 },
 "ignore_char_scale": true,
-"mirror": false,
+"mirror": true,
 "offset": Vector2(-45, -10),
 "scale": 0.2,
 "scene": ""

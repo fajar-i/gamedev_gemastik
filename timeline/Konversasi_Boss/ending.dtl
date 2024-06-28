@@ -1,0 +1,73 @@
+[background arg="res://assets/Background/Background malam 2.png" fade="1.0" transition="Swipe Left To Right"]
+[wait time="1.0"]
+join "Bos Mafia" 1
+"Bos Mafia": Halo Robin. Sudah puas bermain polisi-polisian?
+join Robin (Right) 4 [animation="Instant In Or Out"]
+Robin: Siapa kamu? Kok bisa tau nama ku?
+"Bos Mafia": Oh? Kau masih belum mengetahui orang yang terus kau ganggu semenjak kedatangan misterius engkau?
+Robin: Jangan-jangan, kamu itu..\
+Bos Mafia?
+"Bos Mafia": Pintar. Lalu, pertanyaan selanjutnya.
+[wait time="1.0" hide_text="false"]
+"Bos Mafia": Bagaimana mungkin engkau bisa menggagalkan rencana-rencana saya?!
+Bos Mafia bergerak menuju arah Robin. Namun, suatu gelombang gaya menolak Bos Mafia untuk mendekati Robin.
+"Bos Mafia": Oh, saya mengerti. Kau memiliki 'itu' juga.
+Bos Mafia mengeluarkan keris yang mirip dengan Robin. Namun, energi yang dipancarkan berbeda jauh dengan milik Robin.
+Mella: Keris itu.. aku mendeteksi energi negatif yang kuat dari benda itu!
+"Bos Mafia": Kalau kau ingin bermain seperti itu, baiklah.
+Bos Mafia mengarahkan keris nya ke atas, seolah-olah memanggil bantuan.
+"Bos Mafia": Tidak lama lagi, anak buah ataupun warga desa yang sudah terkena energi negatif keris ini akan datang ke sini.
+Robin mendengar suara kaki yang semakin mendekat. \
+Setelah menunggu yang terasa seperti berjam-jam, Robin ternyata disambut oleh wajah yang ia kenal.
+"Bos Mafia": Ah, si Pemburu. Bagus-bagus, cepat ambil keris itu dari si Polisi Hutan itu.
+leave Robin
+join Pemburu (Kanan) 4
+Pemburu tersebut menggelengkan kepalanya.
+Pemburu: Tidak, saya tidak akan mematuhi perintah mu lagi. Berkat anak muda ini, saya sadar akan pentingnya "kode" dan aturan untuk keberlangsungan manusia maupun hewan.
+Pemburu mengarahkan senapannya terhadap Bos Mafia.
+Pemburu: Dan sekarang, waktunya kamu belajar akan hal itu.
+"Bos Mafia": Ergh, berani-berani nya kau berkhianat!
+Tiba-tiba muncul tukang kebun dari kegelapan malam.
+leave Pemburu
+join Tukang_Kebun 4
+"Bos Mafia": A-ah! Bapak pemilik kebun! Cepat bantu saya, nanti saya akan berikan apapun untuk tanaman kau! Bukankah kau sayang terhadap mereka?
+Tukang_Kebun: Maaf, berkat anak muda yang pintar itu, saya juga tersadarkan dari "kasih sayang" yang membutakan saya dari merawat tanaman dengan benar.
+Tukang_Kebun: Dan mungkin ini saatnya kau untuk tidak terbutakan oleh keegoisan mu sendiri!
+"Bos Mafia": Urgh, kau juga?! Baiklah, kalau begitu tersisa...
+Secara tiba-tiba, muncul suara cambukan yang berasal dari bagian balakang Bos Mafia.
+"Bos Mafia": W-wwaaddiiddaawwww
+leave Tukang_Kebun
+join Pemasok (Kanan) 4
+Bos Mafia terkena cambukan sapu lidi.
+Pemasok: Sudahlah bos, warga di sini sudah sadar dari hasutan kau! Cepat pergi sana! Hush hush!
+Bos Mafia diusir secara paksa (dengan cambukan Pemasok) dari desa.
+leave --All--
+join Robin (Left) 1
+Robin: *menghela nafas* Untung saja ada kalian! Kalau kalian tidak datang tadi.. Brr.
+join Mella 4
+Mella: Hey! Aku daritadi ada di sini tau! Bisa saja tadi aku langsung menyerang si Bos.
+Tukang_Kebun: Sudah-sudah, jangan bertikai. Tadi nama kamu "Mella" ya?
+Mella: Ya! Si manusia tumbuhan! Kalau mau tau lebih tentang tumbuhan, tinggal tanya saja aku!
+Pemburu: Dunia ini semakin aneh saja. Keris ajaib ini, manusia aneh itu.
+Pemasok: Begitulah, Robin pun datang secara misterius kan? Tiba-tiba datang dan menceramahi kita bertiga.
+Robin: Sebenarnya aku dari masa depan. Keris ini juga aku dapat dari sebuah tas misterius.
+Robin dan Mella menceritakan tentang masa depan yang kelam itu.
+Pemburu: Jadi seperti itu ya. Masa depan yang suram.
+Mella: Betul! Semoga saja dengan berubahnya alur waktu ini, masa depan yang Robin kenali berubah drastis!
+Pemasok: Omong-omong, Cara Robin kembali ke masa depan bagaimana? Apakah ada tombol atau gimana gitu?
+Robin: Berdasarkan catatan, seharusnya aku kembali tepat pada pukul 12 malam ini. Berarti sebentaaar lagi.
+Tak lama kemudian, badan Robin dikelilingi oleh cahaya putih yang menjemputnya untuk kembali ke masa depan.
+Robin: Ah, sepertinya ini jemputan ku ke masa depan.
+Tukang_Kebun: Kalau begitu, Robin jaga diri ya. Percayakan kami untuk merawat hutan ini.
+Pemasok: Betul, untung saja kamu menyadarkan kami semua. Sekarang, saatnya kami untuk membalas budi.
+Pemburu: Hati-hati di jalan. Jaga diri di masa depan.
+Mella: Dadah Robin! Jangan lupakan kami ya! Pertahankan semangat mu itu!
+Dengan itu, muncul cahaya yang membutakan makhluk disekitarnya, dan Robin kembali ke masa depan.
+leave --All--
+[background fade="1.0" transition="Swipe Left To Right"]
+[wait time="1.0"]
+join Robin (Left) 1
+Robin: *menghela nafas* Akhirnya kembali ke masa depan. Saatnya mengecek apakah masa depan terselamatkan, atau hanya sebuah mimpi.
+Robin bergegas menuju luar rumah. Ia disambut dengan pemandangan langit yang biru, hutan yang asri, serta suara-suara kicauan burung yang merdu.
+Misi Robin berhasil.
+[end_timeline]
