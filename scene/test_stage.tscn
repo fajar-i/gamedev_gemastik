@@ -1424,7 +1424,7 @@ position = Vector2(-79, 8)
 remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(301, 214)
+position = Vector2(306, 226)
 offset = Vector2(100, -30)
 zoom = Vector2(1.5, 1.5)
 process_callback = 0
