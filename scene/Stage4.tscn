@@ -6,21 +6,10 @@
 [ext_resource type="Script" path="res://script/UI/Camera2D.gd" id="4_weqrn"]
 [ext_resource type="PackedScene" uid="uid://dgxmu22tee4k4" path="res://scene/health_change_manager.tscn" id="6_fpbo2"]
 [ext_resource type="AudioStream" uid="uid://dkp8kaa03pc2h" path="res://assets/SFX/662095__dokuta_gerovv__amb_forest_night.wav" id="6_rr3jc"]
+[ext_resource type="Script" path="res://script/stage4.gd" id="6_yco8u"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q0y64"]
 distance = 3.0
-
-[sub_resource type="GDScript" id="GDScript_gm7ed"]
-script/source = "extends Area2D
-
-signal turn_off_physics
-
-func _on_body_entered(body):
-	turn_off_physics.emit()
-	TransitionFade.transition()
-	await TransitionFade.on_transition_finished
-	Dialogic.start(\"ending\")
-"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xkke1"]
 size = Vector2(67.375, 91.5)
@@ -67,7 +56,7 @@ shape = SubResource("WorldBoundaryShape2D_q0y64")
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2(774, 189)
 collision_mask = 2
-script = SubResource("GDScript_gm7ed")
+script = ExtResource("6_yco8u")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(624, -23)

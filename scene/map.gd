@@ -18,4 +18,11 @@ func _on_kembali_pressed():
 	get_tree().change_scene_to_file("res://scene/menu.tscn")
 
 func _on_malam_pressed():
-	pass # Replace with function body.
+	if GlobalVar.playerData.malam == 1:
+		get_tree().change_scene_to_file("res://scene/Stage1.tscn")
+	elif GlobalVar.playerData.malam == 2:
+		get_tree().change_scene_to_file("res://scene/Stage2.tscn")
+	elif GlobalVar.playerData.malam == 3:
+		get_tree().change_scene_to_file("res://scene/Stage3.tscn")
+	elif GlobalVar.playerData.malam == 3:
+		get_tree().change_scene_to_file("res://scene/Stage4.tscn")

@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bw3pyr7s36ljy" path="res://asset/punya el/map/Map.png" id="4_yns10"]
 [ext_resource type="Texture2D" uid="uid://6gosxddyeefc" path="res://asset/punya el/map/Interactpoint-ezgif.com-crop(1).png" id="5_56xnn"]
 [ext_resource type="Theme" uid="uid://c12v04fx7jsf5" path="res://theme/button.tres" id="6_md5o7"]
-[ext_resource type="Theme" uid="uid://cpepgldnhtvwx" path="res://theme/buttonMalam.tres" id="7_gmu5x"]
+[ext_resource type="Theme" uid="uid://ctinh7s8jtxe6" path="res://theme/buttonMalam.tres" id="7_gmu5x"]
 [ext_resource type="FontFile" uid="uid://dlqfvpk8hfxdv" path="res://asset/alagard.ttf" id="8_g7n7d"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a4gua"]

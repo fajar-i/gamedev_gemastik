@@ -9,5 +9,6 @@ func save():
 	print("save")
 	
 func load_data():
-	GlobalVar.playerData = ResourceLoader.load(GlobalVar.save_file_path + GlobalVar.save_file_name).duplicate(true)
-	print("loaded")
+	if  ResourceLoader.load(GlobalVar.save_file_path + GlobalVar.save_file_name) != null:
+		GlobalVar.playerData = ResourceLoader.load(GlobalVar.save_file_path + GlobalVar.save_file_name).duplicate(true)
+		print("loaded")
