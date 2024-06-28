@@ -3,7 +3,7 @@ extends State
 class_name hit_state
 @onready var timer = $Timer
 
-@export var Damageable : damageable
+@export var Damageable : damageable_snail
 @export var character_state_machine : PlayerStateMachine
 @export var dead_state : State
 @export var knockback_speed : float = 100.0

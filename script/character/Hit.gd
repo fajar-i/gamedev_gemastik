@@ -4,7 +4,7 @@ class_name hit_state_player
 @onready var timer = $Timer
 @onready var death_timer = $Death_timer
 
-@export var Damageable : damageable
+@export var Damageable : damageables
 @export var character_state_machine : PlayerStateMachine
 @export var dead_state : State
 @export var knockback_speed : float = 100.0
