@@ -18,8 +18,8 @@ config/icon="res://asset/icon.svg"
 [autoload]
 
 GlobalVar="*res://scene/GlobalVariable.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 SignalBus="*res://script/signal_bus.gd"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
