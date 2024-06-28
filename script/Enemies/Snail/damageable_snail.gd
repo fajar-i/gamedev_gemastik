@@ -1,11 +1,11 @@
 extends Node
 
-class_name damageables
+class_name damageable_snail
 
 signal on_hit(node : Node, damage_taken : int, knockback_direction: Vector2)
 signal health_ui(health)
 
-@export var health : int = 70:
+@export var health : int = 20:
 	get:
 		return health
 	set(value):

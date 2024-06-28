@@ -6,7 +6,7 @@ class_name Player
 @onready var sprite = $Sprite2D
 @onready var player_state_machine = $PlayerStateMachine
 
-
+@export var max_health : int = 70
 @export var speed : float = 300.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.

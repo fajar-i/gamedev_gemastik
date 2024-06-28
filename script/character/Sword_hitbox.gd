@@ -12,7 +12,7 @@ func _on_body_entered(body):
 	# scanning satu per satu node
 	for child in body.get_children():
 		#, ketika nemu damageable:
-		if child is damageable:
+		if child is damageable_snail:
 			# perhitungan untuk knockback
 			var direction_to_damageable = (body.global_position - get_parent().global_position)
 			var direction_sign = sign(direction_to_damageable.x)
