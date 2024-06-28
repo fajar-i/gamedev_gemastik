@@ -11,15 +11,15 @@ config_version=5
 [application]
 
 config/name="Bismillah Gemastik Dll"
-run/main_scene="res://scene/game_sampah/main_sampah.tscn"
+run/main_scene="res://scene/menu.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://asset/icon.svg"
 
 [autoload]
 
 GlobalVar="*res://scene/GlobalVariable.gd"
-SignalBus="*res://script/signal_bus.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+SignalBus="*res://script/signal_bus.gd"
 
 [dialogic]
 
