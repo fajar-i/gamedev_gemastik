@@ -15,7 +15,7 @@
 [ext_resource type="Script" path="res://script/character/death.gd" id="10_np142"]
 [ext_resource type="Script" path="res://script/character/Hit.gd" id="11_6bnae"]
 [ext_resource type="Script" path="res://script/UI/Lhealthabel.gd" id="15_lai6b"]
-[ext_resource type="PackedScene" path="res://scene/player/health_bar.tscn" id="16_032n5"]
+[ext_resource type="PackedScene" uid="uid://c3n3pcu5ra3x5" path="res://scene/player/health_bar.tscn" id="16_032n5"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ah4xp"]
 radius = 8.0

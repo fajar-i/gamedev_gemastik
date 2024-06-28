@@ -3,8 +3,6 @@ extends Area2D
 @export var player : Snail
 @onready var collision_shape_2d = $CollisionShape2D
 
-func _ready():
-	player.connect("facing_direction_change", _on_player_facing_direction_changed)
 
 # cek yang masuk tu apa, yang dilihat itu parent nya
 func _on_body_entered(body):
