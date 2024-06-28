@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://dgxmu22tee4k4" path="res://scene/health_change_manager.tscn" id="4_oqx1m"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q0y64"]
+distance = 3.0
 
 [node name="testStage" type="Node2D"]
 
@@ -14,36 +15,37 @@
 scroll_ignore_camera_zoom = true
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2(409.6, 0)
+position = Vector2(-227, -28)
+motion_mirroring = Vector2(700, 0)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(-127, -77)
-scale = Vector2(3, 3)
+position = Vector2(-22, 16)
+scale = Vector2(2.9, 2.5)
 texture = ExtResource("1_x3w1h")
 centered = false
 
 [node name="player" parent="." instance=ExtResource("2_rwfb2")]
-position = Vector2(385, 227)
+position = Vector2(385, 196)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="player"]
-position = Vector2(150, -40)
+position = Vector2(124, -41)
 remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(535, 187)
-zoom = Vector2(1.5, 1.5)
+position = Vector2(509, 155)
+zoom = Vector2(2, 2)
 process_callback = 0
 position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 script = ExtResource("3_t5goh")
 
 [node name="Snail" parent="." instance=ExtResource("3_vru2e")]
-position = Vector2(467, 234)
+position = Vector2(468, 204)
 
 [node name="HealthChangeManager" parent="." instance=ExtResource("4_oqx1m")]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(389, 253)
+position = Vector2(387, 231)
 shape = SubResource("WorldBoundaryShape2D_q0y64")
