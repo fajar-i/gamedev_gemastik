@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhuqmp1lxh20n"]
+
+[ext_resource type="Script" path="res://script/UI/hud.gd" id="1_vvduu"]
+[ext_resource type="Texture2D" uid="uid://hdoa03q8438b" path="res://assets/heart.png" id="2_lniye"]
+
+[node name="HUD" type="MarginContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 20
+script = ExtResource("1_vvduu")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Life_Counter" type="HBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="L1" type="TextureRect" parent="HBoxContainer/Life_Counter"]
+layout_mode = 2
+texture = ExtResource("2_lniye")
+stretch_mode = 5
+
+[node name="L2" type="TextureRect" parent="HBoxContainer/Life_Counter"]
+layout_mode = 2
+texture = ExtResource("2_lniye")
+stretch_mode = 5
+
+[node name="L3" type="TextureRect" parent="HBoxContainer/Life_Counter"]
+layout_mode = 2
+texture = ExtResource("2_lniye")
+stretch_mode = 5
+
+[node name="L4" type="TextureRect" parent="HBoxContainer/Life_Counter"]
+layout_mode = 2
+texture = ExtResource("2_lniye")
+stretch_mode = 5
+
+[node name="L5" type="TextureRect" parent="HBoxContainer/Life_Counter"]
+layout_mode = 2
+texture = ExtResource("2_lniye")
+stretch_mode = 5
