@@ -1,0 +1,75 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7fp6tngypbj3"]
+
+[ext_resource type="Texture2D" uid="uid://b4gr4f3jtswcs" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_blue_pressed.png" id="1_wtsq5"]
+[ext_resource type="FontFile" uid="uid://dlqfvpk8hfxdv" path="res://asset/alagard.ttf" id="2_o23rt"]
+
+[node name="credit" type="Node2D"]
+
+[node name="ButtonSquareBluePressed" type="Sprite2D" parent="."]
+position = Vector2(320, 160)
+scale = Vector2(7.11111, 7.11111)
+texture = ExtResource("1_wtsq5")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 206.0
+offset_top = 40.0
+offset_right = 438.0
+offset_bottom = 280.0
+theme_override_constants/separation = 9
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_o23rt")
+theme_override_font_sizes/font_size = 15
+text = "Credits
+~"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_o23rt")
+theme_override_font_sizes/font_size = 12
+text = "https://kenney.nl/assets/
+ui-pack-rpg-expansion"
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_o23rt")
+theme_override_font_sizes/font_size = 12
+text = "https://opengameart.org/content/
+country-side-platform-tiles
+"
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_o23rt")
+theme_override_font_sizes/font_size = 12
+text = "https://pixeljad.itch.io/
+villagetopdown/"
+
+[node name="Label5" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_o23rt")
+theme_override_font_sizes/font_size = 12
+text = "https://edermunizz.itch.io/"
+
+[node name="Label6" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_o23rt")
+theme_override_font_sizes/font_size = 12
+text = "https://josie-makes-stuff.itch.io/
+pixel-art-farming-assets"
+
+[node name="Label7" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_o23rt")
+theme_override_font_sizes/font_size = 12
+text = "https://www.dafont.com/alagard.font
+by Hewett Tsoi"

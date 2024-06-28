@@ -1,15 +1,16 @@
-[gd_scene load_steps=10 format=3 uid="uid://diej0dosuaig6"]
+[gd_scene load_steps=11 format=3 uid="uid://diej0dosuaig6"]
 
 [ext_resource type="Script" path="res://scene/map.gd" id="1_64vxv"]
-[ext_resource type="Texture2D" uid="uid://jhnba5urkocj" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_brown_pressed.png" id="1_jagix"]
-[ext_resource type="Texture2D" uid="uid://b7j5j4t3u5ao3" path="res://asset/Free Pixel Art Forest/Preview/IMG-20240515-WA0041.jpg" id="1_n3aga"]
 [ext_resource type="Texture2D" uid="uid://caes6h7yj1444" path="res://asset/Free Pixel Art Forest/PNG/Background layers/Layer_0011_0.png" id="1_ocj7g"]
-[ext_resource type="Texture2D" uid="uid://u4pmvnnvvm13" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonRound_blue.png" id="4_kiw3l"]
+[ext_resource type="Texture2D" uid="uid://bot6xwarh181q" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonLong_brown_pressed.png" id="3_q3mgm"]
+[ext_resource type="Texture2D" uid="uid://bw3pyr7s36ljy" path="res://asset/punya el/map/Map.png" id="4_yns10"]
+[ext_resource type="Texture2D" uid="uid://6gosxddyeefc" path="res://asset/punya el/map/Interactpoint-ezgif.com-crop(1).png" id="5_56xnn"]
 [ext_resource type="Theme" uid="uid://c12v04fx7jsf5" path="res://theme/button.tres" id="6_md5o7"]
 [ext_resource type="Theme" uid="uid://cpepgldnhtvwx" path="res://theme/buttonMalam.tres" id="7_gmu5x"]
+[ext_resource type="FontFile" uid="uid://dlqfvpk8hfxdv" path="res://asset/alagard.ttf" id="8_g7n7d"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a4gua"]
-texture = ExtResource("4_kiw3l")
+texture = ExtResource("5_56xnn")
 
 [sub_resource type="Theme" id="Theme_jw4wp"]
 Button/styles/disabled = SubResource("StyleBoxTexture_a4gua")
@@ -26,41 +27,28 @@ position = Vector2(316, 160)
 scale = Vector2(0.715517, 0.444515)
 texture = ExtResource("1_ocj7g")
 
-[node name="ButtonSquareBrownPressed" type="Sprite2D" parent="."]
+[node name="ButtonLongBrownPressed" type="Sprite2D" parent="."]
 position = Vector2(320, 160)
-scale = Vector2(7.38854, 7.10382)
-texture = ExtResource("1_jagix")
+scale = Vector2(2.01579, 4.54444)
+texture = ExtResource("3_q3mgm")
 
-[node name="Img-20240515-wa0041" type="Sprite2D" parent="ButtonSquareBrownPressed"]
-scale = Vector2(0.018, 0.018)
-texture = ExtResource("1_n3aga")
-
-[node name="sawah_timur" type="Button" parent="."]
-offset_left = 378.0
-offset_top = 127.0
-offset_right = 409.0
-offset_bottom = 160.0
-theme = SubResource("Theme_jw4wp")
+[node name="Map" type="Sprite2D" parent="ButtonLongBrownPressed"]
+position = Vector2(-1.96695e-05, 0)
+scale = Vector2(0.707307, 0.258)
+texture = ExtResource("4_yns10")
 
 [node name="pemburu_utara" type="Button" parent="."]
-offset_left = 240.0
-offset_top = 71.0
-offset_right = 271.0
-offset_bottom = 104.0
-theme = SubResource("Theme_jw4wp")
-
-[node name="shop_barat" type="Button" parent="."]
-offset_left = 214.0
-offset_top = 246.0
-offset_right = 245.0
-offset_bottom = 279.0
+offset_left = 283.0
+offset_top = 114.0
+offset_right = 314.0
+offset_bottom = 147.0
 theme = SubResource("Theme_jw4wp")
 
 [node name="sampah_balaikota" type="Button" parent="."]
-offset_left = 292.0
-offset_top = 133.0
-offset_right = 323.0
-offset_bottom = 166.0
+offset_left = 387.0
+offset_top = 172.0
+offset_right = 418.0
+offset_bottom = 205.0
 theme = SubResource("Theme_jw4wp")
 
 [node name="kembali" type="Button" parent="."]
@@ -88,6 +76,8 @@ offset_top = 24.0
 offset_right = 578.0
 offset_bottom = 47.0
 grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_g7n7d")
 text = "hari ke:"
 
 [node name="Label2" type="Label" parent="."]
@@ -99,6 +89,8 @@ offset_top = 88.0
 offset_right = 614.0
 offset_bottom = 111.0
 grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_g7n7d")
 text = "Misi Selesai:"
 
 [node name="Label3" type="Label" parent="."]
@@ -110,6 +102,8 @@ offset_top = 184.0
 offset_right = 618.0
 offset_bottom = 285.0
 grow_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("8_g7n7d")
 theme_override_font_sizes/font_size = 10
 text = "Selesaikan 2 misi
 untuk lanjut ke

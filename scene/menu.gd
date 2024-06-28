@@ -1,12 +1,9 @@
 extends Control
 
-@onready var button = $Button2
-@onready var button3 = $Button3
-
 #ketika game di buka, Saved progress akan langsung di load
 func _ready():
 	verify_save_directory(GlobalVar.save_file_path)
-	$Setting.position.x -= 300
+	$Setting.hide()
 
 func verify_save_directory(path: String):
 	GlobalVar.playerData.load_data()
@@ -24,6 +21,22 @@ func _on_lanjut_pressed():
 
 func _on_setting_2_toggled(toggled_on):
 	if toggled_on:
-		$Setting.position.x += 300
+		$Setting.show()
 	else:
-		$Setting.position.x -= 300
+		$Setting.hide()
+
+func _on_credit_toggled(toggled_on):
+	if toggled_on:
+		$Background.z_index = 2
+		$Credit.z_index = 2
+		$creditUI.z_index = 2
+		$creditUI.show()
+	else:
+		$Background.z_index = 0
+		$Credit.z_index = 0
+		$creditUI.z_index = 0
+		$creditUI.hide()
+
+
+func _on_quit_pressed():
+	get_tree().quit()

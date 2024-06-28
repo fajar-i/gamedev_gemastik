@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://e7fhvuexigqi"]
+[gd_scene load_steps=9 format=3 uid="uid://e7fhvuexigqi"]
 
 [ext_resource type="Script" path="res://scene/menu.gd" id="1_ed1s1"]
 [ext_resource type="Texture2D" uid="uid://c81kvswxbb2rx" path="res://asset/Free Pixel Art Forest/Preview/Background.png" id="3_6ywf4"]
@@ -7,6 +7,7 @@
 [ext_resource type="Theme" uid="uid://bda7pi7nqsh1s" path="res://theme/button_kecil.tres" id="5_e54fe"]
 [ext_resource type="Texture2D" uid="uid://4thyrfugd0em" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/126472.png" id="6_jd7o2"]
 [ext_resource type="PackedScene" uid="uid://cap38fjc7vrta" path="res://scene/main menu/settings.tscn" id="7_1brfh"]
+[ext_resource type="PackedScene" uid="uid://b7fp6tngypbj3" path="res://scene/main menu/credit.tscn" id="8_bgkrn"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -51,11 +52,15 @@ offset_top = 240.0
 offset_right = 512.0
 offset_bottom = 297.0
 theme = ExtResource("4_lm6o7")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 text = "Mulai
 "
 icon_alignment = 1
 
-[node name="save" type="Button" parent="."]
+[node name="Credit" type="Button" parent="."]
 layout_mode = 0
 offset_left = 75.0
 offset_top = 256.0
@@ -63,10 +68,11 @@ offset_right = 113.0
 offset_bottom = 294.0
 pivot_offset = Vector2(19, 19)
 theme = ExtResource("5_e54fe")
+toggle_mode = true
 text = "c"
 icon_alignment = 1
 
-[node name="close" type="Button" parent="."]
+[node name="Quit" type="Button" parent="."]
 layout_mode = 0
 offset_left = 124.0
 offset_top = 256.0
@@ -94,15 +100,19 @@ scale = Vector2(0.0455664, 0.0454443)
 texture = ExtResource("6_jd7o2")
 
 [node name="Setting" parent="." instance=ExtResource("7_1brfh")]
+visible = false
 layout_mode = 1
 offset_left = 27.0
 offset_top = 150.0
 offset_right = 27.0
 offset_bottom = 150.0
 
+[node name="creditUI" parent="." instance=ExtResource("8_bgkrn")]
+visible = false
+
 [connection signal="pressed" from="Lanjut" to="." method="_on_lanjut_pressed"]
 [connection signal="pressed" from="Mulai" to="." method="_on_mulai_pressed"]
 [connection signal="pressed" from="Mulai" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="save" to="." method="_on_save_pressed"]
-[connection signal="pressed" from="close" to="." method="_on_close_pressed"]
+[connection signal="toggled" from="Credit" to="." method="_on_credit_toggled"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
 [connection signal="toggled" from="Setting2" to="." method="_on_setting_2_toggled"]

@@ -19,8 +19,8 @@ config/icon="res://asset/icon.svg"
 
 GlobalVar="*res://scene/GlobalVariable.gd"
 SignalBus="*res://script/signal_bus.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 TransitionFade="*res://scene/components/transition_fade.tscn"
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
