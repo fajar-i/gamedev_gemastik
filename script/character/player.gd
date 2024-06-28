@@ -45,3 +45,7 @@ func _physics_process(delta):
 	
 	emit_signal("facing_direction_change", !sprite.flip_h)
 	move_and_slide()
+
+
+func _on_area_2d_turn_off_physics():
+	set_physics_process(false)

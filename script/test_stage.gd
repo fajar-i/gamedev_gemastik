@@ -1,9 +1,11 @@
 extends Node2D
+@onready var audio_stream_player = $AudioStreamPlayer
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Dialogic.signal_event.connect(_on_dialogic_signal)
+	audio_stream_player.play()
 
 
 func _on_dialogic_signal(argument:String):

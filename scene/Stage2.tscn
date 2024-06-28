@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://tc7qr7bo0pt"]
+[gd_scene load_steps=11 format=3 uid="uid://tc7qr7bo0pt"]
 
 [ext_resource type="Script" path="res://script/test_stage.gd" id="1_6vjfc"]
 [ext_resource type="Texture2D" uid="uid://dy77tb4o2is8j" path="res://assets/Background/Background malam 2.png" id="2_kws1r"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://mpylbl444u1e" path="res://scene/Enemies/snail.tscn" id="5_2u6w0"]
 [ext_resource type="PackedScene" uid="uid://dgxmu22tee4k4" path="res://scene/health_change_manager.tscn" id="6_by0mw"]
 [ext_resource type="Script" path="res://scene/components/trigger_boss2.gd" id="7_y6th6"]
+[ext_resource type="AudioStream" uid="uid://dkp8kaa03pc2h" path="res://assets/SFX/662095__dokuta_gerovv__amb_forest_night.wav" id="8_l5t1t"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q0y64"]
 distance = 3.0
@@ -79,4 +80,9 @@ script = ExtResource("7_y6th6")
 position = Vector2(2795, -24)
 shape = SubResource("RectangleShape2D_xkke1")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_l5t1t")
+volume_db = -20.0
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="turn_off_physics" from="Area2D" to="player" method="_on_area_2d_turn_off_physics"]

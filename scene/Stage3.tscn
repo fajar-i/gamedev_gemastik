@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dk6bx3tydnom2"]
+[gd_scene load_steps=11 format=3 uid="uid://dk6bx3tydnom2"]
 
 [ext_resource type="Script" path="res://script/test_stage.gd" id="1_hdnqf"]
 [ext_resource type="Texture2D" uid="uid://dy77tb4o2is8j" path="res://assets/Background/Background malam 2.png" id="2_60jx2"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://script/UI/Camera2D.gd" id="4_s4j8a"]
 [ext_resource type="PackedScene" uid="uid://mpylbl444u1e" path="res://scene/Enemies/snail.tscn" id="5_dxyh8"]
 [ext_resource type="PackedScene" uid="uid://dgxmu22tee4k4" path="res://scene/health_change_manager.tscn" id="6_ntj5n"]
+[ext_resource type="AudioStream" uid="uid://dkp8kaa03pc2h" path="res://assets/SFX/662095__dokuta_gerovv__amb_forest_night.wav" id="7_xpgay"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q0y64"]
 distance = 3.0
@@ -13,18 +14,20 @@ distance = 3.0
 [sub_resource type="GDScript" id="GDScript_le70s"]
 script/source = "extends Area2D
 
-
+signal turn_off_physics
 
 func _on_body_entered(body):
+	turn_off_physics.emit()
 	TransitionFade.transition()
 	await TransitionFade.on_transition_finished
 	Dialogic.start(\"boss3\")
+	
 "
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xkke1"]
 size = Vector2(45.5, 91.5)
 
-[node name="Stage2" type="Node2D"]
+[node name="Stage3" type="Node2D"]
 script = ExtResource("1_hdnqf")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
@@ -98,4 +101,9 @@ script = SubResource("GDScript_le70s")
 position = Vector2(3179, -47)
 shape = SubResource("RectangleShape2D_xkke1")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_xpgay")
+volume_db = -20.0
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="turn_off_physics" from="Area2D" to="player" method="_on_area_2d_turn_off_physics"]

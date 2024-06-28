@@ -1,0 +1,81 @@
+[gd_scene load_steps=10 format=3 uid="uid://bfhdj0eqkmnxd"]
+
+[ext_resource type="Script" path="res://script/test_stage.gd" id="1_iflhm"]
+[ext_resource type="Texture2D" uid="uid://dy77tb4o2is8j" path="res://assets/Background/Background malam 2.png" id="2_ktxvs"]
+[ext_resource type="PackedScene" uid="uid://cgh8rpjcbtumk" path="res://scene/player/player.tscn" id="3_ex6bq"]
+[ext_resource type="Script" path="res://script/UI/Camera2D.gd" id="4_weqrn"]
+[ext_resource type="PackedScene" uid="uid://dgxmu22tee4k4" path="res://scene/health_change_manager.tscn" id="6_fpbo2"]
+[ext_resource type="AudioStream" uid="uid://dkp8kaa03pc2h" path="res://assets/SFX/662095__dokuta_gerovv__amb_forest_night.wav" id="6_rr3jc"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q0y64"]
+distance = 3.0
+
+[sub_resource type="GDScript" id="GDScript_gm7ed"]
+script/source = "extends Area2D
+
+signal turn_off_physics
+
+func _on_body_entered(body):
+	turn_off_physics.emit()
+	TransitionFade.transition()
+	await TransitionFade.on_transition_finished
+	Dialogic.start(\"ending\")
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xkke1"]
+size = Vector2(67.375, 91.5)
+
+[node name="Stage4" type="Node2D"]
+script = ExtResource("1_iflhm")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-227, -28)
+motion_mirroring = Vector2(700, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(-22, 16)
+scale = Vector2(2.9, 2.5)
+texture = ExtResource("2_ktxvs")
+centered = false
+
+[node name="player" parent="." instance=ExtResource("3_ex6bq")]
+position = Vector2(385, 196)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="player"]
+position = Vector2(124, -41)
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(509, 155)
+zoom = Vector2(2, 2)
+process_callback = 0
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+script = ExtResource("4_weqrn")
+
+[node name="HealthChangeManager" parent="." instance=ExtResource("6_fpbo2")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(387, 231)
+shape = SubResource("WorldBoundaryShape2D_q0y64")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(774, 189)
+collision_mask = 2
+script = SubResource("GDScript_gm7ed")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(624, -23)
+shape = SubResource("RectangleShape2D_xkke1")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_rr3jc")
+volume_db = -20.0
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
+[connection signal="turn_off_physics" from="Area2D" to="player" method="_on_area_2d_turn_off_physics"]
