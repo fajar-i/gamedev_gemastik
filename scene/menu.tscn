@@ -7,7 +7,7 @@
 [ext_resource type="Theme" uid="uid://bda7pi7nqsh1s" path="res://theme/button_kecil.tres" id="5_e54fe"]
 [ext_resource type="Texture2D" uid="uid://4thyrfugd0em" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/126472.png" id="6_jd7o2"]
 [ext_resource type="PackedScene" uid="uid://cap38fjc7vrta" path="res://scene/main menu/settings.tscn" id="7_1brfh"]
-[ext_resource type="PackedScene" uid="uid://b7fp6tngypbj3" path="res://scene/main menu/credit.tscn" id="8_bgkrn"]
+[ext_resource type="PackedScene" path="res://scene/main menu/credit.tscn" id="8_bgkrn"]
 
 [node name="Control" type="Control"]
 layout_mode = 3

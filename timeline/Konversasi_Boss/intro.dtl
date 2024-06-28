@@ -1,7 +1,8 @@
-[background fade="1.0" transition="Swipe Left To Right"]
+[background arg="res://assets/Background/distopia.png" fade="1.0" transition="Swipe Left To Right"]
 [wait time="1.0"]
 Cerita berawal di tahun 204X, di mana mafia memiliki kendali penuh terhadap kota Possibly. Konon Bos dari sindikat mafia tersebut memiliki kekuatan misterius yang dapat memanipulasi energi negatif seseorang.
 Di kota itu, tinggallah seorang remaja berhati emas bernama Robin.
+[background arg="res://assets/Background/kosan.png" fade="1.0" transition="Swipe Left To Right"]
 Robin kembali ke indekosnya setelah gagal menjalani tes akademi polisi. Ia menyalakan televisi kecil miliknya dan memantau berita terkini.
 join Robin (Left) 1
 Robin (Left): *menghela nafas* Sudah ketiga kalinya aku gagal tes ini. Sepertinya menjadi polisi memang bukan panggilanku.
@@ -12,11 +13,11 @@ Robin: Timur kota ya? Semakin habis saja hutan di kota ini. Padahal saat saya ma
 Robin: Kayaknya aku perlu ngunjungin rumah lama ku deh, berhubung bakal berubah drastis nanti.
 Dengan itu, Robin bersiap-siap untuk kembali ke rumah yang dulu pernah ia tinggali bersama orang tuanya.
 leave --All--
-[background fade="1.0" transition="Swipe Left To Right"]
+[background arg="res://assets/Background/rumah lama.png" fade="1.0" transition="Swipe Left To Right"]
 [wait time="1.0"]
 Sesampainya di sana, Robin disambut oleh sebuah rumah yang sudah terbengkalai.
 Robin masuk ke dalam rumah.
-[background fade="1.0" transition="Swipe Left To Right"]
+[background arg="res://assets/Background/secret room.png" fade="1.0" transition="Swipe Left To Right"]
 Saat membersihkan rumah yang penuh debu, Robin secara tidak sengaja membuka ruangan rahasia di belakang lemari buku.
 join Robin (Left) 1
 Robin: Ruangan apa ini?
@@ -24,7 +25,7 @@ Robin memeriksa ruangan tersebut dan menemukan suatu mesin silinder asing serta 
 Robin: Hm, mirip lift?
 Robin masuk ke dalam tabung tersebut dan tidak sengaja memencet suatu tombol. Dengan instan, mesin tersebut memerangkap Robin di dalamnya dan muncul sinar yang terang dari dalam.
 leave --All--
-[background fade="1.0" transition="Swipe Left To Right"]
+[background arg="res://assets/Background/hutan.png" fade="1.0" transition="Swipe Left To Right"]
 join Robin (Left) 1
 Robin: Di mana ini? Hijau sekali.
 Robin berdiri dan berjalan mencari jalan keluar.
@@ -58,7 +59,7 @@ Robin: Mafia? Untuk apa mereka ngincer desa yang antah berantah ini?
 Mella: Aku kurang tau detailnya! Makanya, ayo kita ke desanya aja sekalian!
 Mereka pun bergegas menuju desa yang dimaksud.
 leave --All--
-[background fade="1.0" transition="Swipe Left To Right"]
+[background arg="res://assets/Background/pedesaan.png" fade="1.0" transition="Swipe Left To Right"]
 [wait time="1.0"]
 join Robin (Left) 1
 Robin: Kok aku seperti familiar dengan desa ini ya..

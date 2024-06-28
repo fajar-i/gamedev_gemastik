@@ -14,6 +14,10 @@ func verify_save_directory(path: String):
 func _on_mulai_pressed():
 	GlobalVar.playerData = PlayerData.new()
 	GlobalVar.playerData.save()
+	Dialogic.timeline_ended.connect(_on_timeline_ended)
+	Dialogic.start("intro")
+
+func _on_timeline_ended():
 	get_tree().change_scene_to_file("res://scene/map.tscn")
 
 func _on_lanjut_pressed():
