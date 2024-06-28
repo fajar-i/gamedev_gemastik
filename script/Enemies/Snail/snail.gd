@@ -5,7 +5,7 @@ class_name Snail
 @onready var player_state_machine = $PlayerStateMachine
 
 
-const SPEED = 50.0
+@export var SPEED = 50.0
 
 @export var starting_direction : Vector2 = Vector2.LEFT
 @export var hit_state : State

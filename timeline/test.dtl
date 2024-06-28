@@ -1,2 +1,11 @@
 [background arg="res://assets/Background/Background malam 2.png" fade="0.0"]
-Hey, how are yo?
+[style name="test3"]
+join Robin 1 [animation="Bounce In" length="2" z_index="999"]
+Robin (Neutral): Hey, how are yo? dasdassssssssssssssssssssssssssljdbnajskdnajkldasjkdbajkdbajkbjkahdasjkldbasjkdbaksjdbasjkdbasjkldbaskjldbasjkdbajkdbaskffhghsduiofjsdiodfjasdjaslkdjaskldjaskldjakldjaskldjaskldjaklsdjaskldjaskldjaklsdjaskldjaklsdjaskldjaskldjklasdjlas
+- I'm Good!
+	That's a relief.
+	jump yes
+- Not that good
+	label yes
+	That's too bad!
+	[signal arg="wrong_answer"]

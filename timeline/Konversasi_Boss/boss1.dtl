@@ -1,0 +1,46 @@
+Pemburu: Berhenti!
+Sang pemburu mengarahkan senjatanya ke Robin
+Robin (Takut): S-siap bos!
+Pemburu: Perlu apa kamu ke sini?
+Robin (Takut): A-aku polisi hutan yang bertugas di sini!
+Pemburu: Polisi hutan? Perlu apa dengan saya?
+Robin: A-aku dapat laporan dari Kepala Desa, bahwa pemburu di sekitar sini sudah melupakan "kode" mereka!
+Pemburu menurunkan senjatanya
+Pemburu: Kode? Kode apa?
+Robin: Kode di mana pemburu di desa ini hanya memburu secukupnya, serta tidak memburu hewan lindung!
+Pemburu: Hmph, kode itu. Untuk apa saya menaatinya? Hanya sebuah batasan yang mempersulit saja.
+label choice
+- Cukup adalah yang Terbaik!
+	Robin (Neutral): Kalau kita berburu secukupnya, kita juga mempersiapkan perburuan kedepannya!
+	Pemburu: Apa maksudnya itu? Bukankah dengan berburu sebanyak-banyaknya, saya dapat untung yang lebih besar?
+	Robin: Begini, apabila kita berburu sampai merusak ekosistem, hewan buruan tersebut akan sulit untuk ditemukan.
+	Pemburu: Kalau begitu, saya hanya perlu berburu hewan lain saja! Tidak perlu memikirkan hal kosong itu.
+	Robin: Bukan begitu, apabila ekosistem rusak, maka hewan lain juga akan terpengaruh. Ambil saja Harimau, apabila sulit mencari mangsa, mereka akan menyerang Manusia!
+	Robin: Hutan ini akan berbahaya untuk di tinggali!
+	Pemburu: Hm, kamu ada benarnya juga anak muda. Kalau begitu, baik. Saya akan kembali mematuhi "kode" berburu itu lagi.
+	[end_timeline]
+- Hewan Lindung Wajib Dilindungi!
+	Robin (Neutral): Kalau kita tidak memilih hewan buruan kita, efeknya akan ke kita juga!
+	Pemburu: Apa maksudnya itu? Hewan lindung kan memiliki harga yang mahal, ya efeknya membuat saya makin kaya.
+	Robin: Mungkin mereka memiliki harga yang tinggi di pasaran. Namun, harga itu tidak sepadan dengan efek negatifnya!
+	Pemburu: Efek, efek, apa maksud dari efek yang kamu omongkan daritadi?
+	Robin: Salah satu dari efek nya adalah ketidakseimbangan ekosistem!
+	Pemburu: Ketidakseimbangan ekosistem? Apa pedulinya saya?
+	Robin: Dengan ekosistem yang tidak seimbang, kehidupan manusia akan terganggu! Seperti overpopulasi hewan, serta kehilangannya budaya!
+	Robin: Tidak hanya itu, dengan punahnya suatu spesies langka ataupun tidak langka, akan memicu rangkaian kepunahan lainnya dalam rantai makanan.
+	Pemburu: Hm, kamu ada benarnya juga anak muda. Kalau begitu, baik. Saya akan kembali mematuhi "kode" berburu itu lagi.
+	[end_timeline]
+- Kita adalah Manusia!
+	Robin: Karena kita adalah manusia! Aturanlah yang membedakan kita dengan hewan yang kita buru!
+	Pemburu: Hm, selama saya mendapatkan untung, apa pedulinya saya dengan kemanusiaan?
+	Robin: Mungkin efeknya tidak akan langsung terjadi, tetapi hal itu akan berpengaruh kepada mental kita.
+	Pemburu: Mental? Apa hubungannya dengan mental?
+	Robin: Apabila kita membunuh hewan secara tidak manusiawi dan membuat hewan menderita, lama kelamaan kita akan menjadi menjadi orang yang sadis.
+	Robin: Tidak ada bedanya dengan hewan rendah yang kita buru!
+	Pemburu: Hm, kamu ada benarnya juga anak muda. Kalau begitu, baik. Saya akan kembali mematuhi "kode" berburu itu lagi.
+	[end_timeline]
+- Lupakan Saja Kode itu!
+	Robin: Um, aslinya tidak perlu ditaati sih pak..
+	Mella: ROBIN! Jangan takut, ayo sadarkan Pemburu ini!
+	Robin: A-ah iya, bener juga. Seharusnya..
+	jump choice

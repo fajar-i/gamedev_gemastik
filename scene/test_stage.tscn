@@ -1,15 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://bb3kmwgxpw5e0"]
+[gd_scene load_steps=10 format=3 uid="uid://bb3kmwgxpw5e0"]
 
+[ext_resource type="Script" path="res://script/test_stage.gd" id="1_76l4j"]
 [ext_resource type="Texture2D" uid="uid://dy77tb4o2is8j" path="res://assets/Background/Background malam 2.png" id="1_x3w1h"]
 [ext_resource type="PackedScene" uid="uid://cgh8rpjcbtumk" path="res://scene/player/player.tscn" id="2_rwfb2"]
 [ext_resource type="Script" path="res://script/UI/Camera2D.gd" id="3_t5goh"]
 [ext_resource type="PackedScene" uid="uid://mpylbl444u1e" path="res://scene/Enemies/snail.tscn" id="3_vru2e"]
 [ext_resource type="PackedScene" uid="uid://dgxmu22tee4k4" path="res://scene/health_change_manager.tscn" id="4_oqx1m"]
+[ext_resource type="Script" path="res://script/character/trigger_dialogue.gd" id="6_0jobf"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q0y64"]
 distance = 3.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xkke1"]
+size = Vector2(35, 93)
+
 [node name="testStage" type="Node2D"]
+script = ExtResource("1_76l4j")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 scroll_ignore_camera_zoom = true
@@ -39,8 +45,18 @@ position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 script = ExtResource("3_t5goh")
 
-[node name="Snail" parent="." instance=ExtResource("3_vru2e")]
-position = Vector2(468, 204)
+[node name="Mafia" parent="." instance=ExtResource("3_vru2e")]
+position = Vector2(3437, 172)
+
+[node name="Mafia2" parent="." instance=ExtResource("3_vru2e")]
+position = Vector2(2492, 171)
+SPEED = 30.0
+
+[node name="Mafia3" parent="." instance=ExtResource("3_vru2e")]
+position = Vector2(1749, 175)
+
+[node name="Mafia4" parent="." instance=ExtResource("3_vru2e")]
+position = Vector2(1114, 177)
 
 [node name="HealthChangeManager" parent="." instance=ExtResource("4_oqx1m")]
 
@@ -49,3 +65,14 @@ position = Vector2(468, 204)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(387, 231)
 shape = SubResource("WorldBoundaryShape2D_q0y64")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(774, 189)
+collision_mask = 2
+script = ExtResource("6_0jobf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_xkke1")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

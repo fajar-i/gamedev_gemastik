@@ -1,9 +1,9 @@
-[gd_scene load_steps=22 format=3 uid="uid://mpylbl444u1e"]
+[gd_scene load_steps=23 format=3 uid="uid://mpylbl444u1e"]
 
 [ext_resource type="Script" path="res://script/Enemies/Snail/snail.gd" id="1_3xccn"]
-[ext_resource type="Texture2D" uid="uid://oulruahlbh7u" path="res://assets/Mob/Snail/walk-Sheet.png" id="1_bsdoc"]
 [ext_resource type="Texture2D" uid="uid://bqy1rhqldvyge" path="res://assets/Mob/Snail/Dead-Sheet.png" id="1_ykpoy"]
 [ext_resource type="PackedScene" uid="uid://c3n3pcu5ra3x5" path="res://scene/player/health_bar.tscn" id="2_sk7ei"]
+[ext_resource type="Texture2D" uid="uid://d3at55q3d37dj" path="res://assets/Mob/Mafia/enemy run.png" id="3_pftw0"]
 [ext_resource type="Script" path="res://script/character/playerstatemachine.gd" id="4_8y6le"]
 [ext_resource type="Script" path="res://script/Enemies/Snail/Walk.gd" id="5_82fuu"]
 [ext_resource type="Script" path="res://script/Enemies/Snail/damageable_snail.gd" id="5_keqwy"]
@@ -105,7 +105,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("1_bsdoc")]
+"values": [ExtResource("3_pftw0")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -158,10 +158,13 @@ states/walk/position = Vector2(374, 100)
 transitions = ["Start", "walk", SubResource("AnimationNodeStateMachineTransition_pklnv"), "walk", "death", SubResource("AnimationNodeStateMachineTransition_2c4ix")]
 graph_offset = Vector2(-279.375, 0)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_mlbeq"]
-radius = 12.0416
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7x6d0"]
+size = Vector2(34, 46)
 
-[node name="Snail" type="CharacterBody2D" node_paths=PackedStringArray("hit_state")]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gpe17"]
+size = Vector2(34.25, 45.5)
+
+[node name="Mafia" type="CharacterBody2D" node_paths=PackedStringArray("hit_state")]
 position = Vector2(65, 26)
 collision_layer = 4
 script = ExtResource("1_3xccn")
@@ -177,7 +180,7 @@ value = 20.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -5)
-texture = ExtResource("1_ykpoy")
+texture = ExtResource("3_pftw0")
 hframes = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -219,18 +222,19 @@ wait_time = 0.25
 one_shot = true
 
 [node name="Hitbox" type="Area2D" parent="." node_paths=PackedStringArray("player")]
-visible = false
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("9_3dj5i")
 player = NodePath("..")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
-shape = SubResource("CircleShape2D_mlbeq")
+position = Vector2(-7, -2)
+shape = SubResource("RectangleShape2D_7x6d0")
 script = ExtResource("10_5vjcc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_mlbeq")
+position = Vector2(-7.125, -1.75)
+shape = SubResource("RectangleShape2D_gpe17")
 script = ExtResource("10_5vjcc")
 
 [connection signal="animation_finished" from="AnimationTree" to="damageable" method="_on_animation_tree_animation_finished"]
