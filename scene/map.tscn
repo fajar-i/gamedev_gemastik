@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://diej0dosuaig6"]
+[gd_scene load_steps=10 format=3 uid="uid://diej0dosuaig6"]
 
 [ext_resource type="Script" path="res://scene/map.gd" id="1_64vxv"]
 [ext_resource type="Texture2D" uid="uid://jhnba5urkocj" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_brown_pressed.png" id="1_jagix"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://caes6h7yj1444" path="res://asset/Free Pixel Art Forest/PNG/Background layers/Layer_0011_0.png" id="1_ocj7g"]
 [ext_resource type="Texture2D" uid="uid://u4pmvnnvvm13" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonRound_blue.png" id="4_kiw3l"]
 [ext_resource type="Theme" uid="uid://c12v04fx7jsf5" path="res://theme/button.tres" id="6_md5o7"]
+[ext_resource type="Theme" uid="uid://cpepgldnhtvwx" path="res://theme/buttonMalam.tres" id="7_gmu5x"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a4gua"]
 texture = ExtResource("4_kiw3l")
@@ -70,11 +71,51 @@ offset_bottom = 64.0
 theme = ExtResource("6_md5o7")
 text = "Kembali"
 
+[node name="malam" type="Button" parent="."]
+offset_left = 520.0
+offset_top = 264.0
+offset_right = 592.0
+offset_bottom = 304.0
+theme = ExtResource("7_gmu5x")
+text = "malam"
+
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
-horizontal_alignment = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 520.0
+offset_top = 24.0
+offset_right = 578.0
+offset_bottom = 47.0
+grow_horizontal = 0
+text = "hari ke:"
+
+[node name="Label2" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 520.0
+offset_top = 88.0
+offset_right = 614.0
+offset_bottom = 111.0
+grow_horizontal = 0
+text = "Misi Selesai:"
+
+[node name="Label3" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 520.0
+offset_top = 184.0
+offset_right = 618.0
+offset_bottom = 285.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 10
+text = "Selesaikan 2 misi
+untuk lanjut ke
+fase malam!"
 
 [connection signal="pressed" from="pemburu_utara" to="." method="_on_pemburu_utara_pressed"]
 [connection signal="pressed" from="sampah_balaikota" to="." method="_on_sampah_balaikota_pressed"]
 [connection signal="pressed" from="kembali" to="." method="_on_kembali_pressed"]
+[connection signal="pressed" from="malam" to="." method="_on_malam_pressed"]

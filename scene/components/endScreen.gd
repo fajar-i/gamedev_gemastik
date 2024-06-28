@@ -7,6 +7,8 @@ func start():
 	if result == 1:
 		$Label.text = str("Selesai!")
 		$Button.text = str("Kembali")
+		GlobalVar.playerData.siang += 1
+		GlobalVar.playerData.save()
 	
 	elif result == 0:
 		$Label.text = str("Kalah")

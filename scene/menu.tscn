@@ -92,7 +92,7 @@ scale = Vector2(0.0455664, 0.0454443)
 texture = ExtResource("6_jd7o2")
 
 [connection signal="pressed" from="Lanjut" to="." method="_on_lanjut_pressed"]
-[connection signal="pressed" from="Mulai" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Mulai" to="." method="_on_mulai_pressed"]
+[connection signal="pressed" from="Mulai" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="close" to="." method="_on_close_pressed"]
