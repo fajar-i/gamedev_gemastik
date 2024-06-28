@@ -1,0 +1,65 @@
+[gd_scene load_steps=4 format=3 uid="uid://cap38fjc7vrta"]
+
+[ext_resource type="Script" path="res://scene/main menu/settings.gd" id="1_ctpug"]
+[ext_resource type="Texture2D" uid="uid://5s6lx8yyh184" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonLong_blue_pressed.png" id="1_oox4v"]
+[ext_resource type="AudioStream" uid="uid://cybpnr0ojfer1" path="res://asset/musik/sumeru.mp3" id="3_ajguu"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -417.0
+offset_bottom = -269.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ctpug")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 241.0
+offset_bottom = 98.0
+texture = ExtResource("1_oox4v")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -38.0
+offset_right = 100.0
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "Volume"
+
+[node name="Volume" type="HScrollBar" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "Full Screen"
+
+[node name="FullScreen" type="CheckBox" parent="TextureRect/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ajguu")
+autoplay = true
+
+[connection signal="value_changed" from="TextureRect/MarginContainer/VBoxContainer/Volume" to="." method="_on_volume_value_changed"]
+[connection signal="toggled" from="TextureRect/MarginContainer/VBoxContainer/FullScreen" to="." method="_on_full_screen_toggled"]

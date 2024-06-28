@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://e7fhvuexigqi"]
+[gd_scene load_steps=8 format=3 uid="uid://e7fhvuexigqi"]
 
 [ext_resource type="Script" path="res://scene/menu.gd" id="1_ed1s1"]
 [ext_resource type="Texture2D" uid="uid://c81kvswxbb2rx" path="res://asset/Free Pixel Art Forest/Preview/Background.png" id="3_6ywf4"]
@@ -6,6 +6,7 @@
 [ext_resource type="Theme" uid="uid://c12v04fx7jsf5" path="res://theme/button.tres" id="4_lm6o7"]
 [ext_resource type="Theme" uid="uid://bda7pi7nqsh1s" path="res://theme/button_kecil.tres" id="5_e54fe"]
 [ext_resource type="Texture2D" uid="uid://4thyrfugd0em" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/126472.png" id="6_jd7o2"]
+[ext_resource type="PackedScene" uid="uid://cap38fjc7vrta" path="res://scene/main menu/settings.tscn" id="7_1brfh"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -76,7 +77,7 @@ theme = ExtResource("5_e54fe")
 text = "x"
 icon_alignment = 1
 
-[node name="Button3" type="Button" parent="."]
+[node name="Setting2" type="Button" parent="."]
 layout_mode = 0
 offset_left = 27.0
 offset_top = 256.0
@@ -84,15 +85,24 @@ offset_right = 65.0
 offset_bottom = 294.0
 pivot_offset = Vector2(19, 19)
 theme = ExtResource("5_e54fe")
+toggle_mode = true
 icon_alignment = 1
 
-[node name="126472" type="Sprite2D" parent="Button3"]
+[node name="126472" type="Sprite2D" parent="Setting2"]
 position = Vector2(19, 19)
 scale = Vector2(0.0455664, 0.0454443)
 texture = ExtResource("6_jd7o2")
+
+[node name="Setting" parent="." instance=ExtResource("7_1brfh")]
+layout_mode = 1
+offset_left = 27.0
+offset_top = 150.0
+offset_right = 27.0
+offset_bottom = 150.0
 
 [connection signal="pressed" from="Lanjut" to="." method="_on_lanjut_pressed"]
 [connection signal="pressed" from="Mulai" to="." method="_on_mulai_pressed"]
 [connection signal="pressed" from="Mulai" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="save" to="." method="_on_save_pressed"]
 [connection signal="pressed" from="close" to="." method="_on_close_pressed"]
+[connection signal="toggled" from="Setting2" to="." method="_on_setting_2_toggled"]

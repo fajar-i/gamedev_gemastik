@@ -6,7 +6,7 @@ extends Node2D
 @onready var endScr = $"../endScreen"
 @onready var map = $"../TileMap"
 
-var banyak_sampah = 2 * GlobalVar.playerData.malam
+var banyak_sampah = 12 - (GlobalVar.playerData.malam * 2)
 var health = 100
 var speed = 150
 

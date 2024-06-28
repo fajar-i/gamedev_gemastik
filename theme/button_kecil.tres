@@ -1,12 +1,19 @@
-[gd_resource type="Theme" load_steps=5 format=3 uid="uid://bda7pi7nqsh1s"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://bda7pi7nqsh1s"]
 
 [ext_resource type="Texture2D" uid="uid://b4gr4f3jtswcs" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_blue_pressed.png" id="1_kiy44"]
 [ext_resource type="FontFile" uid="uid://dlqfvpk8hfxdv" path="res://asset/alagard.ttf" id="1_kpifw"]
+[ext_resource type="Texture2D" uid="uid://c33qd0q1ob3cx" path="res://asset/kenney_ui-pack-rpg-expansion/PNG/buttonSquare_blue.png" id="2_0c7pl"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2ajxq"]
-texture = ExtResource("1_kiy44")
+texture = ExtResource("2_0c7pl")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ltqwh"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_05io6"]
+texture = ExtResource("2_0c7pl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pixdn"]
+texture = ExtResource("1_kiy44")
 
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
@@ -15,5 +22,5 @@ Button/fonts/font = ExtResource("1_kpifw")
 Button/styles/disabled = SubResource("StyleBoxTexture_2ajxq")
 Button/styles/focus = SubResource("StyleBoxEmpty_ltqwh")
 Button/styles/hover = SubResource("StyleBoxTexture_2ajxq")
-Button/styles/normal = SubResource("StyleBoxTexture_2ajxq")
-Button/styles/pressed = SubResource("StyleBoxTexture_2ajxq")
+Button/styles/normal = SubResource("StyleBoxTexture_05io6")
+Button/styles/pressed = SubResource("StyleBoxTexture_pixdn")

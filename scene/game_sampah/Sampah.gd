@@ -19,7 +19,7 @@ func _ready():
 	$"../TongSampah/Nonorganik".modulate = Color.YELLOW
 	$"../TongSampah/Berbahaya".modulate = Color.RED
 
-	for i in range(10):
+	for i in range($"../player".banyak_sampah):
 		var x = randi() % packed_scene.size()
 		location.x = randf_range(10, 1000)
 		location.y = randf_range(10, 500)
