@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ijnjcoax2p4t"
-path="res://.godot/imported/Tiles.png-94f0bc722a3ba7da51d7ecf842d0c58a.ctex"
+uid="uid://cugobu1gdbnhl"
+path="res://.godot/imported/Idle mc.png-5d54b2f1d5925b05a405833c91de996e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Assets/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-94f0bc722a3ba7da51d7ecf842d0c58a.ctex"]
+source_file="res://assets/Character/Idle mc.png"
+dest_files=["res://.godot/imported/Idle mc.png-5d54b2f1d5925b05a405833c91de996e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcsx4hoblqn"
-path="res://.godot/imported/Dead-Sheet.png-b363d79dc6fa6ddd400700297f93488f.ctex"
+uid="uid://dpgyg7q6kc8ti"
+path="res://.godot/imported/Attack mc.png-ad5cec4995019cadbcb4ff99692f2d45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Character/Dead/Dead-Sheet.png"
-dest_files=["res://.godot/imported/Dead-Sheet.png-b363d79dc6fa6ddd400700297f93488f.ctex"]
+source_file="res://assets/Character/Attack mc.png"
+dest_files=["res://.godot/imported/Attack mc.png-ad5cec4995019cadbcb4ff99692f2d45.ctex"]
 
 [params]
 
