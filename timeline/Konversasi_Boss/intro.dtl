@@ -3,6 +3,7 @@
 Cerita berawal di tahun 204X, di mana mafia memiliki kendali penuh terhadap kota Possibly. Konon Bos dari sindikat mafia tersebut memiliki kekuatan misterius yang dapat memanipulasi energi negatif seseorang.
 Di kota itu, tinggallah seorang remaja berhati emas bernama Robin.
 Robin kembali ke indekosnya setelah gagal menjalani tes akademi polisi. Ia menyalakan televisi kecil miliknya dan memantau berita terkini.
+join Robin (Left) 1
 Robin (Left): *menghela nafas* Sudah ketiga kalinya aku gagal tes ini. Sepertinya menjadi polisi memang bukan panggilanku.
 "Presenter Berita": (suara televisi) Tingkat polusi di Kota Possiblis berada pada tingkat tertinggi dibandingkan 5 tahun terakhir. Hal ini diperburuk lagi dengan maraknya penggundulan hutan dan pemakaian kendaraan berat untuk pembangunan.
 "Presenter Berita": Sementara itu, Kelompok Bisnis Terpadu atau KBT yang dipimpin oleh Donny Sugiarto kembali memenangkan tender proyek infrastruktur besar-besaran di wilayah timur kota. Kritikus mengklaim bahwa ini adalah bukti lain dari monopoli KBT atas proyek-proyek pemerintah.
@@ -10,17 +11,21 @@ Robin mematikan televisi
 Robin: Timur kota ya? Semakin habis saja hutan di kota ini. Padahal saat saya masih kecil, indah sekali tempat itu.
 Robin: Kayaknya aku perlu ngunjungin rumah lama ku deh, berhubung bakal berubah drastis nanti.
 Dengan itu, Robin bersiap-siap untuk kembali ke rumah yang dulu pernah ia tinggali bersama orang tuanya.
+leave --All--
 [background fade="1.0" transition="Swipe Left To Right"]
 [wait time="1.0"]
 Sesampainya di sana, Robin disambut oleh sebuah rumah yang sudah terbengkalai.
 Robin masuk ke dalam rumah.
 [background fade="1.0" transition="Swipe Left To Right"]
 Saat membersihkan rumah yang penuh debu, Robin secara tidak sengaja membuka ruangan rahasia di belakang lemari buku.
+join Robin (Left) 1
 Robin: Ruangan apa ini?
 Robin memeriksa ruangan tersebut dan menemukan suatu mesin silinder asing serta suatu tas yang mencantol pada mesin tersebut.
 Robin: Hm, mirip lift?
 Robin masuk ke dalam tabung tersebut dan tidak sengaja memencet suatu tombol. Dengan instan, mesin tersebut memerangkap Robin di dalamnya dan muncul sinar yang terang dari dalam.
+leave --All--
 [background fade="1.0" transition="Swipe Left To Right"]
+join Robin (Left) 1
 Robin: Di mana ini? Hijau sekali.
 Robin berdiri dan berjalan mencari jalan keluar.
 Robin: Sudah lama tidak melihat hutan se-asri ini. Aku kira sudah tidak ada lagi yang seperti ini.
@@ -28,9 +33,10 @@ Tanpa disadari, ia sedang menjadi incaran Harimau yang sedang lapar. Namun, sesa
 Robin: Harimau!? Bukannya seharusnya sudah punah?!
 Gagal menyerang mangsanya, harimau tersebut pun pergi.
 Robin: Ada-ada saja. Aku kira mereka sudah tidak ada lagi.
-Melihat sekitar, Robin menyadari tembok tumbuhan yang tiba-tiba muncul untuk menghalanginya. 
+Melihat sekitar, Robin menyadari tembok tumbuhan yang tiba-tiba muncul untuk menghalanginya.
 Robin: Tumbuhan apa ini? Perasaan tadi gak ada di sini.
 Dalam sekejap, tumbuhan tersebut berubah menjadi sosok manusia tumbuhan.
+join Mella 4
 Mella: (Kesal) Hey! Kenapa tadi kamu tidak waspada! Untung saja ada aku tadi.
 Robin: A-apa? Tunggu, kamu itu tumbuhan yang tadi?! Kamu bukan manusia ya?
 Mella: Yaiyalah! Mana ada manusia biasa yang bisa berubah jadi tumbuhan seperti ku tadi?
@@ -42,7 +48,7 @@ Robin: Tas? Perasaan aku gak bawa tas deh.
 Tanpa Robin sadari, tas yang menyantol pada mesin tadi terbawa oleh Robin. Robin pun membuka tas tersebut dan menemukan sebuah keris dan sebuah catatan.
 Apabila kau membaca ini, selamat! Anda berhasil merusak hukum waktu dan kembali ke masa lalu. Namun, Anda hanya memiliki waktu 5 hari sebelum dikembalikan ke masa depan.
 Tas ini juga dilengkapi oleh keris yang dapat memanipulasi energi positif dari suatu makhluk. Setiap makhluk yang disentuh oleh benda ini, maka akan menetralkan energi negatif di dalam nya.
-Robin: Mesin waktu dan keris? Semakin aneh saja. 
+Robin: Mesin waktu dan keris? Semakin aneh saja.
 Mella: Kamu dari masa depan?! Ceritain dong, bagaimana di masa depan! Apakah tumbuhan jadi semakin banyak? Atau hewan-hewan semakin berevolusi?
 Robin: Um, sebaliknya. Hutan seperti ini sudah tidak ada, hanya tersisa pabrik-pabrik yang mengeluarkan polusi. Hewan-hewan pun banyak yang punah, seperti Harimau tadi.
 Mella: Ya ampun, seperti itu ya masa depan. Mungkin, tujuan kamu ke sini sebenarnya untuk merubah itu?
@@ -51,8 +57,10 @@ Mella: Hmm, denger-denger nya sih, warga desa sempet diancem oleh mafia gitu.
 Robin: Mafia? Untuk apa mereka ngincer desa yang antah berantah ini?
 Mella: Aku kurang tau detailnya! Makanya, ayo kita ke desanya aja sekalian!
 Mereka pun bergegas menuju desa yang dimaksud.
+leave --All--
 [background fade="1.0" transition="Swipe Left To Right"]
 [wait time="1.0"]
+join Robin (Left) 1
 Robin: Kok aku seperti familiar dengan desa ini ya..
 Tak lama beranjak ke dalam desa, mereka disambut oleh sang Kepala Desa. Mella pun berubah menjadi bunga dan bersembunyi di tas Robin.
 "Kepala Desa": Selamat datang di desa kecil ini! Jarang-jarang kami kedatangan tamu dari luar. Kalau boleh tau, kalian ada urusan apa di sini?
@@ -87,7 +95,8 @@ Robin: A-ada pak! Aku sempet denger kalau ada masalah Mafia di sekitar sini ya?
 "Kepala Desa": Jadi seperti itu kondisi desa ini. Saya berharap, dengan kedatangan kamu, semua bisa kembali terkendali.
 Robin: Siap pak! Aku akan melakukan yang terbaik untuk desa ini, dan masa depan!
 "Kepala Desa": Haha, baiklah kalau begitu. Saya izin pulang dulu.
-Agus keluar dari pos, dan Mella berubah menjadi wujud manusia lagi.
+Kepala Desa keluar dari pos, dan Mella berubah menjadi wujud manusia lagi.
+join Mella 4
 Mella: Phew, untung dia percaya kalau kamu polisi hutan.
 Robin: Hm, Mafia ini kok bisa mempengaruhi warga sekitar ya?
 Mella: Aku bisa mendeteksi aura negatif yang abnormal dari warga-warga sekitar desa ini. Mungkin Mafia-mafia itu dapat memanipulasi itu?
