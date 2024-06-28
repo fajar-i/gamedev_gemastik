@@ -1,0 +1,37 @@
+[background arg="res://assets/Background/Background malam 2.png" fade="1.0" transition="Swipe Left To Right"]
+[wait time="1.0"]
+join Robin (Left) 1
+Robin (Neutral): (bergumam suatu lagu)
+join Tukang_Kebun 4 [animation="Instant In Or Out"]
+Tukang_Kebun: Selamat malam, anak muda.
+Robin (Neutral): E-Eh! Selamat malam!
+Tukang_Kebun: Ada perlu apa ke sini? Ini sudah malam loh, ayo cepat kembali.
+Robin: Begini pak, aku dapat laporan dari kepala desa kalau tanaman di sini dirawat dengan cara yang kurang tepat.
+Tukang_Kebun: Kurang tepat? Ah jangan aneh-aneh, saya merawat tanaman-tanaman saya dengan sepenuh hati. Mana mungkin cara seperti itu salah?
+Robin: Jadi, begini pak...
+label choice
+- Memakai Mesin Bertenaga Bensin
+	Robin: Mesin-mesin yang Bapak gunakan itu menghasilkan emisi karbon yang tinggi.
+	Tukang_Kebun: Memangnya kenapa kalau begitu? Kebun desa kan kecil, meskipun mengeluarkan emisi atau apapun itu, tidak akan berpengaruh besar.
+	Robin: Mungkin sekarang skala nya masih kecil. Namun, apabila menjadi kebiasaan, nantinya emisi tersebut tidak akan terkendali!
+	Tukang_Kebun: Terus, memang kalau tidak terkendali, apa pengaruhnya ke tumbuhan saya?
+	Robin: Pengaruhnya mungkin tidak secara langsung, tetapi berpengaruh terhadap iklim. Apabila cuacanya berubah menjadi ektrim, tentunya tumbuhan-tumbuhan Bapak akan mati.
+	Tukang_Kebun: Benar juga ya. Kalau begitu, saya akan lebih memperbaiki kebiasaan-kebiasaan menanam saya. Terima kasih, anak muda. Mari, kembali ke desa.
+	[end_timeline]
+- Penggunaan Pupuk yang Berlebihan!
+	Robin: Bukan begitu, mungkin menurut Bapak hal itu adalah kasih sayang. Namun, segala yang berlebihan itu buruk. Seperti penggunaan pupuk kimia yang berlebihan.
+	Tukang_Kebun: Loh, bukannya semakin banyak pupuk semakin bahagia dan subur tanaman saya?
+	Robin: Mungkin yang terlihat seperti subur. Padahal, kalau dilihat secara detail, beberapa bagian tanaman menjadi kuning. Artinya, tanaman itu kelebihan pupuk.
+	Tukang_Kebun: Benar juga ya. Kalau begitu, saya akan lebih memperbaiki kebiasaan-kebiasaan menanam saya. Terima kasih, anak muda. Mari, kembali ke desa.
+	[end_timeline]
+- Kelebihan Penyiraman Air
+	Robin: Bukan begitu, meskipun menurut Bapak itu merupakan bentuk kasih sayang, segala yang berlebihan itu buruk. Contohnya saja kebiasaan Bapak dalam menyiram tanaman.
+	Tukang_Kebun: Ada apa dengan kebiasaan menyiram saya? Semakin banyak air, tanaman semakin sehat kan?
+	Robin: Mungkin itu benar, tetapi kita juga harus memiliki batas. Apabila terlalu berlebihan, nanti saat musim kemarau, air nya habis dipakai sekarang.
+	Tukang_Kebun: Benar juga ya. Kalau begitu, saya akan lebih memperbaiki kebiasaan-kebiasaan menanam saya. Terima kasih, anak muda. Mari, kembali ke desa.
+	[end_timeline]
+- Kasih Sayang Pasti Selalu Benar
+	Robin: Kalau sudah sepenuh hati, seharusnya tanaman juga sehat juga sih....
+	Mella: ROBIN! Segala sesuatu yang berlebihan itu buruk! Apalagi jika mereka yakin itu adalah hal yang baik!
+	Robin: A-ah iya, makasih Mella, udah ngingetin. Jadi, sebenarnya..
+	jump choice

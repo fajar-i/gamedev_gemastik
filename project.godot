@@ -25,12 +25,19 @@ TransitionFade="*res://scene/components/transition_fade.tscn"
 [dialogic]
 
 directories/dch_directory={
+"Kepala Desa": "res://timeline/Konversasi_Boss/Kepala Desa.dch",
 "Mella": "res://timeline/Konversasi_Boss/Mella.dch",
+"Pemasok": "res://timeline/Konversasi_Boss/Pemasok.dch",
 "Pemburu": "res://timeline/Konversasi_Boss/Pemburu.dch",
-"Robin": "res://timeline/Portrait/Robin.dch"
+"Presenter Berita": "res://timeline/Konversasi_Boss/Presenter Berita.dch",
+"Robin": "res://timeline/Portrait/Robin.dch",
+"Tukang_Kebun": "res://timeline/Konversasi_Boss/Tukang_Kebun.dch"
 }
 directories/dtl_directory={
 "boss1": "res://timeline/Konversasi_Boss/boss1.dtl",
+"boss2": "res://timeline/Konversasi_Boss/boss2.dtl",
+"boss3": "res://timeline/Konversasi_Boss/boss3.dtl",
+"intro": "res://timeline/Konversasi_Boss/intro.dtl",
 "test": "res://timeline/test.dtl"
 }
 glossary/default_case_sensitive=true

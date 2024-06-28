@@ -1,8 +1,12 @@
-Pemburu: Berhenti!
+[background arg="res://assets/Background/Background malam 2.png" fade="1.0" transition="Swipe Right To Left"]
+[wait time="1.0"]
+join Pemburu (Right) 1
+Pemburu (Neutral): Berhenti!
 Sang pemburu mengarahkan senjatanya ke Robin
-Robin (Takut): S-siap bos!
+join Robin (Right) 4 [animation="Instant In Or Out"]
+Robin (Right): S-siap bos!
 Pemburu: Perlu apa kamu ke sini?
-Robin (Takut): A-aku polisi hutan yang bertugas di sini!
+Robin (Right): A-aku polisi hutan yang bertugas di sini!
 Pemburu: Polisi hutan? Perlu apa dengan saya?
 Robin: A-aku dapat laporan dari Kepala Desa, bahwa pemburu di sekitar sini sudah melupakan "kode" mereka!
 Pemburu menurunkan senjatanya
@@ -11,7 +15,7 @@ Robin: Kode di mana pemburu di desa ini hanya memburu secukupnya, serta tidak me
 Pemburu: Hmph, kode itu. Untuk apa saya menaatinya? Hanya sebuah batasan yang mempersulit saja.
 label choice
 - Cukup adalah yang Terbaik!
-	Robin (Neutral): Kalau kita berburu secukupnya, kita juga mempersiapkan perburuan kedepannya!
+	Robin (Right): Kalau kita berburu secukupnya, kita juga mempersiapkan perburuan kedepannya!
 	Pemburu: Apa maksudnya itu? Bukankah dengan berburu sebanyak-banyaknya, saya dapat untung yang lebih besar?
 	Robin: Begini, apabila kita berburu sampai merusak ekosistem, hewan buruan tersebut akan sulit untuk ditemukan.
 	Pemburu: Kalau begitu, saya hanya perlu berburu hewan lain saja! Tidak perlu memikirkan hal kosong itu.
@@ -20,7 +24,7 @@ label choice
 	Pemburu: Hm, kamu ada benarnya juga anak muda. Kalau begitu, baik. Saya akan kembali mematuhi "kode" berburu itu lagi.
 	[end_timeline]
 - Hewan Lindung Wajib Dilindungi!
-	Robin (Neutral): Kalau kita tidak memilih hewan buruan kita, efeknya akan ke kita juga!
+	Robin (Right): Kalau kita tidak memilih hewan buruan kita, efeknya akan ke kita juga!
 	Pemburu: Apa maksudnya itu? Hewan lindung kan memiliki harga yang mahal, ya efeknya membuat saya makin kaya.
 	Robin: Mungkin mereka memiliki harga yang tinggi di pasaran. Namun, harga itu tidak sepadan dengan efek negatifnya!
 	Pemburu: Efek, efek, apa maksud dari efek yang kamu omongkan daritadi?

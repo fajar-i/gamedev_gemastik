@@ -1,0 +1,37 @@
+[background arg="res://assets/Background/Background malam 2.png" fade="1.0" transition="Swipe Left To Right"]
+[wait time="1.0"]
+join Pemasok 1
+Pemasok: Halo dek, mau beli bungkus plastik?
+join Robin (Right) 4 [animation="Instant In Or Out"]
+Robin: Oh enggak mas, saya tidak lagi nyari plastik.
+Pemasok: Kalau begitu mas lanjut jalan.
+Robin: E-eh mas! Tunggu dulu, mas bukannya yang dulu ngebuat bungkus dari bahan-bahan organik?
+Pemasok: Ya, betul! Dulu mas buat nya dari organik. Semenjak orang-orang baru ini dateng, mas jadi lebih untung kalau jualnya bungkus plastik.
+Robin: (orang orang baru? Oh mafia-mafia itu.)
+Robin: Tapi kan, bungkus plastik dapat merusak lingkungan? Gimana kalo mas kembali jualan dari bahan-bahan organik?
+Pemasok: Ah, masa sih? Dikubur aja cukup kali. Kalau dari bahan organik, mas repot bikinnya. Udah gitu, untungnya gak sebesar ini!
+label choice
+- Organik Lebih Sehat
+	Robin: Meskipun begitu, bahan organik akan lebih sehat dibandingkan plastik!
+	Pemasok: Lebih sehat? Kan hanya untuk kemasan, bukan untuk dimakan? Masa ngaruh sih?
+	Robin: Pada pengaplikasiannya, iya hanya untuk bungkus. Tetapi, plastik mengandung zat berbahaya seperti BPA yang mencemari makanan dan minuman yang dikemas!
+	Pemasok: Oh jadi walaupun hanya sebagai bungkus, masih tetap berpengaruh kepada isinya ya. Kalau begitu, mas jualan dari bahan organik lagi aja deh.
+	[end_timeline]
+- Plastik Merusak Lingkungan
+	Robin: Meskipun sudah dikubur, plastik tidak akan terurai selama ratusan tahun!
+	Pemasok: Terus, dampaknya ke tanah apa? 
+	Robin: Plastik tersebut nantinya mengganggu kesuburan tanah serta organisme-organisme yang hidup di dalamnya! Jadi walaupun sudah dikubur, bukan berarti masalah terselesaikan!
+	Pemasok: Oh jadi walaupun sudah dikubur, masih tetap berpengaruh terhadap lingkungan ya. Kalau begitu, mas jualan dari bahan organik lagi aja deh.
+	[end_timeline]
+- Dapat Menyiksa Hewan
+	Robin: Walaupun sudah dikubur, tetap saja masih terdapat sampah-sampah yang pastinya dibuang sembarangan!
+	Pemasok: Kalau begitu, sama saja seperti yang organik dong? Organik juga kan bisa dibuang secara sembarangan.
+	Robin: Mungkin bisa terjadi seperti itu. Namun, apabila dari bahan plastik, burung-burung laut sering memakan potongan plastik yang mereka kira ikan. Akibatnya, banyak yang mati kelaparan dengan perut penuh plastik.
+	Robin: Apabila hanya sampah organik, mereka pasti masih dapat bertahan hidup.
+	Pemasok: Oh, benar juga ya. Kalau begitu, mas bakal jualan dari bahan organik lagi aja deh kalau begitu.
+	[end_timeline]
+- Seharusnya Aman Sih...
+	Robin: Hm, kalau sudah dikubur begitu, kayaknya masalahnya terselsaikan deh..
+	Mella: ROBIN! Mana ada sampah plastik yang dikubur dibilang "masalah terselesaikan"?
+	Robin: A-ah iya, malah menambah masalah ya sepertinya. Seharusnya...
+	jump choice
