@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 class_name Player
+@onready var audio = $AudioStreamPlayer
 
 @onready var animation_tree = $AnimationTree
 @onready var sprite = $Sprite2D

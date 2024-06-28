@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://cgh8rpjcbtumk"]
+[gd_scene load_steps=37 format=3 uid="uid://cgh8rpjcbtumk"]
 
 [ext_resource type="Script" path="res://script/character/player.gd" id="1_bhlyp"]
 [ext_resource type="Texture2D" uid="uid://dje210udxjjbv" path="res://assets/Character/Run mc.png" id="2_t7hr3"]
@@ -16,6 +16,7 @@
 [ext_resource type="Script" path="res://script/character/Hit.gd" id="11_6bnae"]
 [ext_resource type="Script" path="res://script/UI/Lhealthabel.gd" id="15_lai6b"]
 [ext_resource type="PackedScene" uid="uid://c3n3pcu5ra3x5" path="res://scene/player/health_bar.tscn" id="16_032n5"]
+[ext_resource type="AudioStream" uid="uid://bvl34bdiyu2t" path="res://assets/SFX/419181__14gpanskahonc_petr__14-man-fast-walking-dirt.wav" id="17_sthem"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ah4xp"]
 radius = 8.0
@@ -277,9 +278,9 @@ position = Vector2(1, 3)
 shape = SubResource("CapsuleShape2D_ah4xp")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("5_wepb3")
+texture = ExtResource("2_t7hr3")
 offset = Vector2(3, 0)
-hframes = 4
+hframes = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -368,6 +369,10 @@ offset_right = 33.0
 offset_bottom = 38.0
 max_value = 70.0
 value = 70.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_sthem")
+volume_db = -10.0
 
 [connection signal="animation_finished" from="AnimationTree" to="PlayerStateMachine/Attack" method="_on_animation_tree_animation_finished"]
 [connection signal="health_ui" from="damageable" to="Label" method="_on_damageable_health_ui"]

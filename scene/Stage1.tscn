@@ -1,0 +1,74 @@
+[gd_scene load_steps=10 format=3 uid="uid://bkrbqkekqs6xb"]
+
+[ext_resource type="Script" path="res://script/test_stage.gd" id="1_aar5t"]
+[ext_resource type="Texture2D" uid="uid://dy77tb4o2is8j" path="res://assets/Background/Background malam 2.png" id="2_uvw1l"]
+[ext_resource type="PackedScene" uid="uid://cgh8rpjcbtumk" path="res://scene/player/player.tscn" id="3_hfpvm"]
+[ext_resource type="Script" path="res://script/UI/Camera2D.gd" id="4_smi07"]
+[ext_resource type="PackedScene" uid="uid://mpylbl444u1e" path="res://scene/Enemies/snail.tscn" id="5_1srxu"]
+[ext_resource type="PackedScene" uid="uid://dgxmu22tee4k4" path="res://scene/health_change_manager.tscn" id="6_f1slq"]
+[ext_resource type="Script" path="res://script/character/trigger_dialogue.gd" id="7_hbv0a"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_q0y64"]
+distance = 3.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xkke1"]
+size = Vector2(45.5, 91.5)
+
+[node name="Stage1" type="Node2D"]
+script = ExtResource("1_aar5t")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(-227, -28)
+motion_mirroring = Vector2(700, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(-22, 16)
+scale = Vector2(2.9, 2.5)
+texture = ExtResource("2_uvw1l")
+centered = false
+
+[node name="player" parent="." instance=ExtResource("3_hfpvm")]
+position = Vector2(385, 196)
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="player"]
+position = Vector2(124, -41)
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(509, 155)
+zoom = Vector2(2, 2)
+process_callback = 0
+position_smoothing_enabled = true
+position_smoothing_speed = 10.0
+script = ExtResource("4_smi07")
+
+[node name="Mafia" parent="." instance=ExtResource("5_1srxu")]
+position = Vector2(3437, 172)
+
+[node name="Mafia3" parent="." instance=ExtResource("5_1srxu")]
+position = Vector2(1749, 175)
+
+[node name="Mafia4" parent="." instance=ExtResource("5_1srxu")]
+position = Vector2(1114, 177)
+
+[node name="HealthChangeManager" parent="." instance=ExtResource("6_f1slq")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(387, 231)
+shape = SubResource("WorldBoundaryShape2D_q0y64")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(774, 189)
+collision_mask = 2
+script = ExtResource("7_hbv0a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2765, -5)
+shape = SubResource("RectangleShape2D_xkke1")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
